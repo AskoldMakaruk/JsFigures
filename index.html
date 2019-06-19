@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="lib/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body>
+
+    <ul class="nav nav-tabs">
+        <li class="active" style="margin-left: calc(50% - 300px)"><a data-toggle="tab" href="#board">Drawing board</a>
+        </li>
+        <li><a data-toggle="tab" href="#about">About</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="board" class="tab-pane fade in active">
+            <div class="container">
+                <div class="row">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Area</td>
+                                <td>Dot 1</td>
+                                <td>Dot 2</td>
+                                <td>Dot 3</td>
+                                <td>Dot 4</td>
+                            </tr>
+                            <tr>
+                                <td id="area">0</td>
+                                <td id="dot1"></td>
+                                <td id="dot2"></td>
+                                <td id="dot3"></td>
+                                <td id="dot4"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <canvas id="canvas" width="600" height="400" style="border:1px solid #000000;"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+                    </div>
+                </div>
+                <script src="main.js"></script>
+
+            </div>
+        </div>
+        <div id="about" class="tab-pane fade">
+            <h3>About</h3>
+            <p>Simple program in javascript with jquery, that takes user's input for 3 dots on canvas and
+                draws
+                parallelogram, which lies on them. After parallelogram has been built, program calculates area of it
+                using Gauss's area formula and builds circle with this area and center in the parallelogram's center of
+                mass. Dots can be rearranged by user.</p>
+            <p>Known bug: if you scroll down coordinate system no longer works with canvas properly.</p>
+
+            <p id="credits">Made by Askold Makaruk</p>
+            <h5>askoldmakaruk@gmail.com</h5>
+        </div>
+
+    </div>
+</body>
+
+</html>

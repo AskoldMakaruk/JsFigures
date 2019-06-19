@@ -1,0 +1,31 @@
+#canvas{
+    position: relative;
+     margin-left: calc(50% -300px); 
+}
+#about{
+    text-align: center;
+}
+a:focus {
+    outline:0;}
+ul {
+    float:none;
+    display:inline-block;
+    zoom:1;    
+}
+.container{
+    max-width: 600px;
+}
+.nav-tabs {
+    text-align:center;
+}
+#credits{
+    margin: 30px auto 0 auto ;
+}
+p{
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+#about h5{
+    font-weight: bold;
+}
